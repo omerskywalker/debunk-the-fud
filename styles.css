@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: "Space Mono", monospace;
+    background: linear-gradient(180deg, #000000, #1a1a1a); /* Gradient background from dark black to lighter black */
+    color: white;
+}
+
+.container {
+    padding: 2%;
+    padding-top: 3%;
+    padding-bottom: 0%;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3.5rem !important;
+}
+
+.card {
+    perspective: 1000px;
+    position: relative;
+    height: 210px; /* Adjust height as needed */
+    border: 2px solid #f7931a;
+    margin: 10px; /* Add margin to avoid overlap */
+}
+
+.card .front, .card .back {
+    position: absolute;
+    width: calc(100% - 4px); /* Adjust width to fit within the border */
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure full height */
+    border-radius: 0.5rem; /* For rounded corners */
+    color: white;
+    padding: 10px; /* Add padding for content spacing */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.card .front {
+    transform: rotateY(0deg);
+    background-color: #1a1a1a;
+}
+
+.card.flipped .front {
+    transform: rotateY(180deg) scale(1.5);;
+    
+}
+
+.card .back {
+    transform: rotateY(-180deg);
+    background-color: #333333;
+    color: #f7931a;
+}
+
+.card.flipped .back {
+    transform: rotateY(0deg) scale(3);
+    top: 100%;
+    left: -35%;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #f7931a;
+    transform: scale(1.05);
+}
+
+.flipped {
+    z-index: 1000;
+    
+}
+
+h1 {
+    text-shadow: 2px 2px 5px #f7931a;
+}
+
+.card p {
+    font-size: 1.5rem; /* Set font size to 0.8rem */
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    padding: 5px; /* Add padding to avoid text touching the edges */
+    overflow: hidden; /* Ensure text doesn't overflow */
+    word-break: break-word; /* Break words if too long */
+}
+
+.back p {
+    font-size: 1rem;
+}
+
+#copy-notification {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.twitter {
+    color: #1DA1F2;
+}
+
+.bitcoin {
+    color: #f7931a;;
+}
+
+.split {
+    color: grey;
+    font-size: 1.1rem;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-100 {
+    opacity: 1 !important;
+}
+
+.tgfb {
+    margin-left: 1%;
+}
+
+footer {
+    font-family: 'Press Start 2P', cursive;
+    padding-bottom: 3%;
+}
+
+footer p {
+    display: inline-block;
+}
