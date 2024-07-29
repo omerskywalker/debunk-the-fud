@@ -29,7 +29,7 @@ h1 {
     position: absolute;
     width: calc(100% - 4px); /* Adjust width to fit within the border */
     backface-visibility: hidden;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,8 +46,7 @@ h1 {
 }
 
 .card.flipped .front {
-    transform: rotateY(180deg) scale(1.5);;
-    
+    transform: rotateY(180deg);
 }
 
 .card .back {
@@ -57,19 +56,12 @@ h1 {
 }
 
 .card.flipped .back {
-    transform: rotateY(0deg) scale(3);
-    top: 100%;
-    left: -35%;
+    transform: rotateY(0deg);
 }
 
 .card:hover {
     box-shadow: 0 0 10px #f7931a;
     transform: scale(1.05);
-}
-
-.flipped {
-    z-index: 1000;
-    
 }
 
 h1 {
@@ -83,10 +75,11 @@ h1 {
     padding: 5px; /* Add padding to avoid text touching the edges */
     overflow: hidden; /* Ensure text doesn't overflow */
     word-break: break-word; /* Break words if too long */
+    letter-spacing: 0.5px;
 }
 
 .back p {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 #copy-notification {

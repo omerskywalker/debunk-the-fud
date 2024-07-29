@@ -18,9 +18,9 @@ const arr = [
 ];
 
 const explanations = [
-    "Bitcoin mining often utilizes surplus energy from renewable sources or energy that would otherwise be wasted. Technological advancements are continually improving energy efficiency.",
-    "While Bitcoin's price can be volatile, it has shown increasing stability over time. As adoption grows, market liquidity increases, helping to reduce volatility.",
-    "Only a small percentage of Bitcoin transactions are related to illicit activities. Bitcoin transactions are more transparent and traceable than cash, making it easier for authorities to track illegal activity.",
+    "Bitcoin mining often utilizes surplus energy from renewable sources or energy that would otherwise be wasted. It is helpful to a grid, not harmful. Ask ERCOT.",
+    "Bitcoin's price was highly volatile in it's infancy but has shown increasing stability as it matures. Over any 4-year timespan, the price has always gone up.",
+    "Less than 0.34% of transactions are related to illicit activities. Bitcoin transactions are more transparent and traceable than cash, making it easier for authorities to track.",
     "Bitcoin's intrinsic value comes from its decentralized network, scarcity (only 21 million bitcoins will ever exist), security, and its utility as a store of value and medium of exchange.",
     "Bitcoin's digital nature allows it to be easily transferred across the globe, stored securely in a digital wallet, and divided into smaller units for transactions, making it highly practical.",
     "There is no substantial evidence to support the theory that Bitcoin was created by the NSA. Bitcoin's whitepaper and early development were spearheaded by the pseudonymous Satoshi Nakamoto.",
