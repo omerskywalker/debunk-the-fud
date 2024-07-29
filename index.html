@@ -9,16 +9,26 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-black text-white font-press-start flex items-center justify-center min-h-screen flex-col">
+    <!-- hero image-->
+    <div id="hero" class="fixed inset-0 z-50 flex items-center justify-center bg-cover bg-center">
+        <h1 class="text-5xl text-white">“If you don't believe me or don't get it, <br /> I don't have time to try to convince you, sorry.” -Satoshi</h1>
+    </div>
+    <!-- main section-->
     <div class="container mx-auto text-center">
-        <h1 class="text-4xl mb-8 text-orange-500">Debunk the FUD</h1>
-        <div class="grid grid-cols-4 gap-4" id="card-container">
+        <div class="header-text-container">
+            <h1 class="text-4xl mb-8 text-orange-500">DEBUNK THE FUD</h1>
+            <h1 class="text-4xl mb-8 text-orange-500">in under 5 minutes</h1>
+        </div>
+        
+        <div class="grid grid-cols-3 gap-4" id="card-container">
             <!-- Cards will be dynamically generated here -->
         </div>
     </div>
+    <!-- footer section-->
     <footer class="mt-8 text-center">
         <p>
             <a href="https://x.com/0merskywalker" target="_blank" class="text-orange-500 hover:underline">follow me on <span class="twitter">Twitter</span></a>

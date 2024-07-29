@@ -14,7 +14,6 @@ const arr = [
     "Bitcoin fails as a currency", 
     "Bitcoin can be hacked", 
     "Bitcoin needs internet to survive", 
-    "Bitcoin is manipulated by Tether"
 ];
 
 const explanations = [
@@ -24,16 +23,15 @@ const explanations = [
     "Bitcoin's intrinsic value comes from its decentralized network, scarcity (only 21 million bitcoins will ever exist), security, and its utility as a store of value and medium of exchange.",
     "Bitcoin's digital nature allows it to be easily transferred across the globe, stored securely in a digital wallet, and divided into smaller units for transactions, making it highly practical.",
     "There is no substantial evidence to support the theory that Bitcoin was created by the NSA. Bitcoin's whitepaper and early development were spearheaded by the pseudonymous Satoshi Nakamoto.",
-    "Satoshi Nakamoto, the creator of Bitcoin, has remained anonymous and inactive for years. It is unlikely that the creator will suddenly sell a large amount of Bitcoin, given the network's resilience.",
-    "Bitcoin transactions are relatively slow compared to some payment methods, but solutions like the Lightning Network are being developed to enable faster and cheaper transactions.",
-    "Bitcoin's scalability issues are being addressed through various solutions, such as the Lightning Network, SegWit, and potential future upgrades. These solutions aim to handle more transactions efficiently.",
-    "While some governments may attempt to restrict Bitcoin, its decentralized nature makes it difficult to ban completely. Bitcoin can operate in a peer-to-peer manner without centralized control.",
-    "Bitcoin has been declared dead numerous times, yet it has consistently recovered and grown stronger. Its resilience and increasing adoption suggest it is not just a passing bubble.",
-    "While Bitcoin's code can be copied, its network effects, security, and widespread adoption cannot be easily replicated. Clones lack the trust and infrastructure that Bitcoin has built.",
-    "Bitcoin is being used as a currency in several places, including El Salvador. Its adoption as a means of payment is growing, and it also serves as a store of value.",
-    "Bitcoin's blockchain has proven to be highly secure. The network's decentralized nature and cryptographic security make it virtually impossible to hack.",
-    "Bitcoin transactions can be conducted using alternative methods such as satellite communication or mesh networks, ensuring it can function even in areas with limited internet access.",
-    "While Tether and other stablecoins may influence Bitcoin's price, Bitcoin's value is primarily driven by market demand, investor sentiment, and its inherent properties as a decentralized currency."
+    "Satoshi Nakamoto, the creator of Bitcoin, has remained anonymous and inactive for years. It is unlikely that the creator will sell his coins, since he has not spent a single unit in over a decade.",
+    "Bitcoin's base-layer immutable transactions can take 10 minutes, but solutions like the Lightning Network enable near instant payments for extremely low fees.",
+    "Bitcoin's scalability is being developed by the brightest minds through various solutions, such as the Lightning Network, Liquid, Fediments, etc. Money scales in layers. Example: gold ➡️ redemption notes ➡️ credit cards",
+    "While some governments may attempt to restrict Bitcoin, its decentralized nature makes it impossible to ban completely. It's similar to a government attempting to ban the internet. ",
+    "Bitcoin has been declared dead numerous times, yet it has consistently recovered and grown stronger. Its resilience and increasing adoption suggest it is not just a passing bubble but an antifragile technology.",
+    "While Bitcoin's code can be copied, its network effects, security, and widespread adoption cannot be replicated. Clones lack the trust and infrastructure that Bitcoin has built.",
+    "Bitcoin is being used as a currency in several places, including El Salvador. Its adoption as a means of payment is growing, and it also serves as the best store of value over multi-year timeframes.",
+    "Bitcoin's blockchain has proven to be highly secure. The network's decentralized nature and cryptographic security make it virtually impossible to hack. The network currently stores over 1 trillion in value.",
+    "Bitcoin transactions can be conducted using alternative methods such as satellite communication, SMS, HAM radio, and mesh networks, ensuring it can function even in areas with limited internet access.",
 ];
 
 const cardContainer = document.getElementById('card-container');
@@ -86,6 +84,15 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.innerWidth > 1024) { // Apply only for desktop users
         document.body.style.zoom = '80%';
     }
+
+    setTimeout(() => {
+        document.getElementById('hero').classList.add('fade-out');
+        setTimeout(() => {
+            document.getElementById('hero').style.display = 'none';
+            document.querySelector('.container').classList.remove('hidden');
+            document.querySelector('footer').classList.remove('hidden');
+        }, 2000); // Match this duration with the CSS fadeOut duration
+    }, 5000); // Wait 5 seconds before starting the fade-out animation
 });
 
 document.addEventListener('click', function(event) {

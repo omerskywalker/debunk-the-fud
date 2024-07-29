@@ -1,20 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-    font-family: "Space Mono", monospace;
+    font-family: "Oswald", sans-serif;
     background: linear-gradient(180deg, #000000, #1a1a1a); /* Gradient background from dark black to lighter black */
     color: white;
 }
 
+#hero {
+    background-image: url('assets/black-canvas.jpg'); /* Replace with your hero image URL */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+#hero.fade-out {
+    animation: fadeOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+#hero h1 {
+    margin-bottom: 3%;
+    color: #f7931a;;
+    font-family: "Shadows Into Light", cursive;    
+    text-shadow: 1px 1px 0 #fff;
+    width: 80%;
+
+}
+
 .container {
-    padding: 2%;
+    padding: 3.5%;
     padding-top: 3%;
     padding-bottom: 0%;
 }
 
+.header-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 h1 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 3.5rem !important;
+    font-size: 5.0rem !important;
+    font-family: "Shadows Into Light", cursive;
+    text-shadow: 2px 2px 5px #f7931a;
 }
 
 .card {
@@ -64,10 +107,6 @@ h1 {
     transform: scale(1.05);
 }
 
-h1 {
-    text-shadow: 2px 2px 5px #f7931a;
-}
-
 .card p {
     font-size: 1.5rem; /* Set font size to 0.8rem */
     text-align: center;
@@ -79,7 +118,7 @@ h1 {
 }
 
 .back p {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 
 #copy-notification {
@@ -109,14 +148,54 @@ h1 {
 }
 
 .tgfb {
-    margin-left: 1%;
+    margin-left: 2%;
 }
 
 footer {
-    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+    text-align: center;
+    font-family: "Shadows Into Light", cursive;
     padding-bottom: 3%;
 }
 
 footer p {
     display: inline-block;
+    font-size: 2rem;
+}
+
+fotter a:first {
+    margin-right: 20px;
+}
+
+/* media queries */
+
+/* Media query for large-sized phones */
+@media (min-width: 375px) and (max-width: 916px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .container h1 {
+        font-size: 3rem !important;
+        line-height: 3.5rem !important;
+    }
+
+    .card {
+        height: 180px;
+        margin: 8px;
+    }
+
+    .card p {
+        font-size: 1.2rem;
+    }
+
+    .back p {
+        font-size: 0.7rem;
+    }
+
+    #hero h1 {
+        line-height: 62px;
+        letter-spacing: 2px;
+        font-size: 3rem !important;
+    }
 }
