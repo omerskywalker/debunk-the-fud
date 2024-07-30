@@ -36,7 +36,7 @@ body {
     font-family: "Shadows Into Light", cursive;    
     text-shadow: 1px 1px 0 #fff;
     width: 80%;
-
+    letter-spacing: 3px;
 }
 
 .container {
@@ -45,13 +45,24 @@ body {
     padding-bottom: 0%;
 }
 
+.container, footer {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
 .header-text-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
     margin-top: 2%;
     margin-bottom: 2%;
+    letter-spacing: 5px;
+    height: 145px;
+}
+
+.header-text-container h1 {
+    margin-bottom: 2.7rem;
 }
 
 h1 {
@@ -63,7 +74,7 @@ h1 {
 .card {
     perspective: 1000px;
     position: relative;
-    height: 210px; /* Adjust height as needed */
+    height: 250px; /* Adjust height as needed */
     border: 2px solid #f7931a;
     margin: 10px; /* Add margin to avoid overlap */
 }
@@ -108,22 +119,17 @@ h1 {
 }
 
 .card p {
-    font-size: 1.5rem; /* Set font size to 0.8rem */
+    font-size: 2rem; 
     text-align: center;
-    margin: 0; /* Remove default margin */
-    padding: 5px; /* Add padding to avoid text touching the edges */
-    overflow: hidden; /* Ensure text doesn't overflow */
-    word-break: break-word; /* Break words if too long */
+    margin: 0; 
+    padding: 5px; 
+    overflow: hidden; 
+    word-break: break-word; 
     letter-spacing: 0.5px;
 }
 
 .back p {
-    font-size: 1.2rem;
-}
-
-#copy-notification {
-    opacity: 0;
-    transition: opacity 0.3s;
+    font-size: 1.5rem;
 }
 
 .twitter {
@@ -147,24 +153,37 @@ h1 {
     opacity: 1 !important;
 }
 
-.tgfb {
-    margin-left: 2%;
-}
-
 footer {
     width: 100%;
     text-align: center;
     font-family: "Shadows Into Light", cursive;
-    padding-bottom: 3%;
+    margin-top: 5rem;
+    padding-bottom: 1%;
 }
 
 footer p {
     display: inline-block;
     font-size: 2rem;
+    letter-spacing: 2px;
 }
 
 fotter a:first {
     margin-right: 20px;
+}
+
+.split {
+    border-right: 3px solid #f7931a;
+    color: black;
+}
+
+.viewCount {
+    color: #f7931a;
+    padding-left: 2%;
+}
+
+#visitor-counter, #twitter-link, #study {
+    width: 20%;
+    text-align: center;
 }
 
 /* media queries */
@@ -178,6 +197,7 @@ fotter a:first {
     .container h1 {
         font-size: 3rem !important;
         line-height: 3.5rem !important;
+        margin-bottom: 0.5rem;
     }
 
     .card {
@@ -190,12 +210,21 @@ fotter a:first {
     }
 
     .back p {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     #hero h1 {
         line-height: 62px;
         letter-spacing: 2px;
         font-size: 3rem !important;
+    }
+
+    #visitor-counter, #twitter-link, #study {
+        font-size: 1.3rem;
+        width: 31%;
+    }
+
+    .card:last-of-type {
+        width: 200%;
     }
 }

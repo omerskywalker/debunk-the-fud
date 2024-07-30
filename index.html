@@ -24,18 +24,22 @@
             <h1 class="text-4xl mb-8 text-orange-500">in under 5 minutes</h1>
         </div>
         
-        <div class="grid grid-cols-3 gap-4" id="card-container">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="card-container">
             <!-- Cards will be dynamically generated here -->
         </div>
     </div>
     <!-- footer section-->
-    <footer class="mt-8 text-center">
+    <footer class="text-center">
         <p>
-            <a href="https://x.com/0merskywalker" target="_blank" class="text-orange-500 hover:underline">follow me on <span class="twitter">Twitter</span></a>
-            <span class="split">|</span>
-            <p class="tgfb hover:underline"> thank God for <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" class="bitcoin">Bitcoin</a></p>
+            <p id="visitor-counter"></p>
+            <span class="split">.</span>
+            <p id="twitter-link"><a href="https://x.com/0merskywalker" target="_blank" class="text-orange-500 hover:underline">follow me on <span class="twitter">Twitter</span></a></p>
+            <span class="split">.</span>
+            <p id="study" class="hover:underline"> study <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" class="bitcoin">Bitcoin</a></p>
         </p>
     </footer>
+    
+    <script src="firebase.js" type="module"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
