@@ -227,10 +227,11 @@ footer p {
     }
 
     .card:last-of-type {
-        width: 200%;
+        width: 196%;
     }
 
     footer {
-        margin-bottom: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 }
