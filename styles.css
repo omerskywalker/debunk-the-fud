@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-body {
-    font-family: "Oswald", sans-serif;
-    background: linear-gradient(180deg, #000000, #1a1a1a); /* Gradient background from dark black to lighter black */
-    color: white;
-}
-
 #hero {
     background-image: url('assets/black-canvas.jpg'); /* Replace with your hero image URL */
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +29,7 @@ body {
     margin-bottom: 3%;
     color: #f7931a;;
     font-family: "Shadows Into Light", cursive;    
-    text-shadow: 1px 1px 0 #fff;
+    text-shadow: 2px 2px 1px #fff;
     width: 80%;
     letter-spacing: 3px;
 }
@@ -68,7 +63,7 @@ body {
 h1 {
     font-size: 5.0rem !important;
     font-family: "Shadows Into Light", cursive;
-    text-shadow: 2px 2px 5px #f7931a;
+    text-shadow: 3px 3px 2px #f7931a;
 }
 
 .card {
