@@ -18,15 +18,15 @@ const arr = [
 
 const explanations = [
   "Bitcoin mining often utilizes surplus energy from renewable sources or energy that would otherwise be wasted, since homeless energy cannot be stored without leakage. Bitcoin mining turns excess waste into treasure.",
-  "Bitcoin's price was highly volatile in it's infancy but has shown increasing stability as it matures. Over any 4-year timespan, the price has always gone up.",
+  "Bitcoin's price was highly volatile in it's infancy but has shown increasing stability as it matures. Over any 4-year timespan, the price has always gone up due to the limited supply and increased demand.",
   "Less than 0.34% of transactions are related to illicit activities. Bitcoin transactions are more transparent and traceable than cash, making it easier for authorities to track.",
   "Bitcoin's intrinsic value comes from its decentralized network, scarcity (only 21 million bitcoins will ever exist), security, and its utility as a store of value and medium of exchange.",
   "Bitcoin's digital nature allows it to be easily transferred across the globe, stored securely in a digital wallet, and divided into smaller units for transactions, making it highly practical.",
-  "Satoshi Nakamoto, the creator of Bitcoin, has remained anonymous and inactive for years. It is unlikely that the creator will sell his coins, since he has not spent a single unit in over a decade.",
+  "Satoshi Nakamoto, the creator of Bitcoin, has remained inactive for years with billions of USD value in BTC. It is unlikely that the creator will sell his coins, since he has not spent a single unit in over a decade.",
   "Bitcoin's early development was spearheaded by Satoshi Nakamoto. Consequent development was openly discussed via public forums, and contributations were made by open-source developers",
   "Bitcoin's base-layer immutable transactions can take 10 minutes, but solutions like the Lightning Network enable near instant payments for extremely low fees. Money always scales in layers.",
   "Bitcoin's scalability is being developed by some of the brightest open-source developers through various solutions, such as the Lightning Network, Liquid, Fediments, etc.",
-  "While some governments may attempt to restrict Bitcoin, its decentralized nature makes it impossible to ban completely. It's similar to a government attempting to ban the internet. ",
+  "While some governments may attempt to restrict Bitcoin, its decentralized nature makes it impossible to ban outright. It's similar to a government attempting to ban the internet. Nations are now beginning to embrace it.",
   "Bitcoin has been declared dead numerous times, yet it has consistently recovered and grown stronger. Its resilience and increasing adoption suggest it is not just a passing bubble but an antifragile technology.",
   "While Bitcoin's code can be copied, its network effects, security, and widespread adoption cannot be replicated. Clones lack the trust and infrastructure that Bitcoin has built over 15 years.",
   "Bitcoin is being used as a currency in several places, including El Salvador. Its adoption as a means of payment is growing, and it also serves as the best store of value over multi-year timeframes.",
