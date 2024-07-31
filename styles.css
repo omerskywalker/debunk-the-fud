@@ -12,17 +12,17 @@
 }
 
 #hero.fade-out {
-    animation: fadeOut 2s ease-in-out forwards;
+  animation: fadeOut 2s ease-in-out forwards;
 }
 
 @keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        display: none;
-    }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 
 #hero h1 {
@@ -35,29 +35,30 @@
 }
 
 .container {
-    padding: 3.5%;
-    padding-top: 3%;
-    padding-bottom: 0%;
+  padding: 3.5%;
+  padding-top: 3%;
+  padding-bottom: 0%;
 }
 
-.container, footer {
-    display: none;
+.container,
+footer {
+  display: none;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .header-text-container {
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    letter-spacing: 5px;
-    height: 145px;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  letter-spacing: 5px;
+  height: 145px;
 }
 
 .header-text-container h1 {
-    margin-bottom: 2.7rem;
+  margin-bottom: 2.7rem;
 }
 
 h1 {
@@ -67,166 +68,176 @@ h1 {
 }
 
 .card {
-    perspective: 1000px;
-    position: relative;
-    height: 250px; /* Adjust height as needed */
-    border: 2px solid #f7931a;
-    margin: 10px; /* Add margin to avoid overlap */
+  perspective: 1000px;
+  position: relative;
+  height: 250px; /* Adjust height as needed */
+  border: 2px solid #f7931a;
+  margin: 10px; /* Add margin to avoid overlap */
 }
 
-.card .front, .card .back {
-    position: absolute;
-    width: calc(100% - 4px); /* Adjust width to fit within the border */
-    backface-visibility: hidden;
-    transition: transform 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%; /* Ensure full height */
-    border-radius: 0.5rem; /* For rounded corners */
-    color: white;
-    padding: 10px; /* Add padding for content spacing */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+.card .front,
+.card .back {
+  position: absolute;
+  width: calc(100% - 4px); /* Adjust width to fit within the border */
+  backface-visibility: hidden;
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure full height */
+  border-radius: 0.5rem; /* For rounded corners */
+  color: white;
+  padding: 10px; /* Add padding for content spacing */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .card .front {
-    transform: rotateY(0deg);
-    background-color: #1a1a1a;
+  transform: rotateY(0deg);
+  background-color: #1a1a1a;
 }
 
 .card.flipped .front {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card .back {
-    transform: rotateY(-180deg);
-    background-color: #333333;
-    color: #f7931a;
+  transform: rotateY(-180deg);
+  background-color: #333333;
+  color: #f7931a;
 }
 
 .card.flipped .back {
-    transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 .card:hover {
-    box-shadow: 0 0 10px #f7931a;
-    transform: scale(1.05);
+  box-shadow: 0 0 10px #f7931a;
+  transform: scale(1.05);
 }
 
 .card p {
-    font-size: 2rem; 
-    text-align: center;
-    margin: 0; 
-    padding: 5px; 
-    overflow: hidden; 
-    word-break: break-word; 
-    letter-spacing: 0.5px;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  word-break: break-word;
+  letter-spacing: 0.5px;
 }
 
 .back p {
-    font-size: 1.5rem;
+  font-size: 1.25vw;
 }
 
 .twitter {
-    color: #1DA1F2;
+  color: #1da1f2;
+}
+
+.twitter:hover,
+.bitcoin:hover {
+  text-decoration: underline;
 }
 
 .bitcoin {
-    color: #f7931a;;
+  color: #f7931a;
 }
 
 .split {
-    color: grey;
-    font-size: 1.1rem;
+  color: grey;
+  font-size: 1.1rem;
 }
 
 .opacity-0 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .opacity-100 {
-    opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 footer {
-    width: 100%;
-    text-align: center;
-    font-family: "Shadows Into Light", cursive;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 1%;
+  width: 100%;
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1%;
 }
 
 footer p {
-    display: inline-block;
-    font-size: 2rem;
-    letter-spacing: 2px;
+  display: inline-block;
+  font-size: 2rem;
+  letter-spacing: 2px;
 }
 
 .split {
-    border-right: 3px solid #f7931a;
-    color: black;
+  border-right: 3px solid #f7931a;
+  color: black;
 }
 
 .viewCount {
-    color: #f7931a;
-    padding-left: 2%;
+  color: #f7931a;
+  padding-left: 2%;
 }
 
-#visitor-counter, #twitter-link, #study {
-    width: 20%;
-    text-align: center;
+#visitor-counter,
+#twitter-link,
+#study {
+  width: 20%;
+  text-align: center;
 }
 
 /* media queries */
 
 /* Media query for large-sized phones */
 @media (min-width: 375px) and (max-width: 916px) {
-    h1 {
-        font-size: 2.5rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
 
-    .container h1 {
-        font-size: 3rem !important;
-        line-height: 3.5rem !important;
-        margin-bottom: 0.5rem;
-    }
+  .container h1 {
+    font-size: 3rem !important;
+    line-height: 3.5rem !important;
+    margin-bottom: 0.5rem;
+  }
 
-    .card {
-        height: 180px;
-        margin: 8px;
-    }
+  .card {
+    height: 180px;
+    margin: 8px;
+  }
 
-    .card p {
-        font-size: 1.2rem;
-    }
+  .card p {
+    font-size: 1.2rem;
+  }
 
-    .back p {
-        font-size: 1rem;
-    }
+  .back p {
+    font-size: 1rem;
+  }
 
-    #hero h1 {
-        line-height: 62px;
-        letter-spacing: 2px;
-        font-size: 3rem !important;
-    }
+  #hero h1 {
+    line-height: 62px;
+    letter-spacing: 2px;
+    font-size: 3rem !important;
+  }
 
-    #visitor-counter, #twitter-link, #study {
-        font-size: 1rem;
-        width: 31%;
-    }
+  #visitor-counter,
+  #twitter-link,
+  #study {
+    font-size: 1rem;
+    width: 31%;
+  }
 
-    #study {
-        text-align: left;
-        padding-left: 3%;
-    }
+  #study {
+    text-align: left;
+    padding-left: 3%;
+  }
 
-    .card:last-of-type {
-        width: 196%;
-    }
+  .card:last-of-type {
+    width: 196%;
+  }
 
-    footer {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
+  footer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
