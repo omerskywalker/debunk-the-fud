@@ -2,7 +2,7 @@
 
 #hero {
     background-image: url('assets/black-canvas.jpg'); /* Replace with your hero image URL */
-    background-size: contain;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
