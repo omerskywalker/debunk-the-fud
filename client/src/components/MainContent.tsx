@@ -82,7 +82,12 @@ export default function MainContent() {
       <div className="container mx-auto px-4 py-12 md:py-24">
         <div className="text-center mb-12 md:mb-16 space-y-4 animate-scale-in">
           <h1 
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-primary tracking-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight"
+            style={{
+              color: 'white',
+              WebkitTextStroke: '2px hsl(var(--primary))',
+              textShadow: '0 0 30px hsl(var(--primary) / 0.5), 0 0 60px hsl(var(--primary) / 0.3)'
+            }}
             data-testid="heading-main"
           >
             DEBUNK THE FUD
