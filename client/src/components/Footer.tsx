@@ -7,7 +7,7 @@ export default function Footer() {
             href="https://x.com/0merskywalker"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors hover-elevate px-3 py-1 rounded-md"
+            className="text-muted-foreground hover:text-white transition-colors hover-elevate px-3 py-1 rounded-md"
             data-testid="link-twitter"
           >
             follow me on <span className="text-[#1da1f2]">Twitter</span>
@@ -19,7 +19,7 @@ export default function Footer() {
             href="https://bitcoin.org/bitcoin.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors hover-elevate px-3 py-1 rounded-md"
+            className="text-muted-foreground hover:text-white transition-colors hover-elevate px-3 py-1 rounded-md"
             data-testid="link-whitepaper"
           >
             study <span className="text-primary">freedom money</span>
