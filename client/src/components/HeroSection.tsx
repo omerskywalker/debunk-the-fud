@@ -26,12 +26,18 @@ export default function HeroSection() {
       }}
       data-testid="hero-section"
     >
-      <div className="max-w-4xl px-6 text-center animate-fade-in">
-        <blockquote className="font-mono text-base md:text-lg italic text-primary leading-relaxed">
+      <div className="max-w-5xl px-6 text-center animate-fade-in">
+        <blockquote className="font-mono text-xl md:text-3xl lg:text-4xl italic text-white leading-relaxed font-medium"
+          style={{
+            textShadow: '0 0 40px hsl(var(--primary) / 0.6), 0 0 80px hsl(var(--primary) / 0.3), 0 2px 4px rgba(0,0,0,0.8)'
+          }}
+        >
           "If you don't believe me or don't get it,<br />
-          I don't have time to try to convince you, sorry."<br />
-          <span className="text-muted-foreground">- Satoshi Nakamoto</span>
+          I don't have time to try to convince you, sorry."
         </blockquote>
+        <p className="mt-8 text-primary text-lg md:text-2xl font-semibold tracking-wide">
+          - Satoshi Nakamoto
+        </p>
       </div>
     </div>
   );
